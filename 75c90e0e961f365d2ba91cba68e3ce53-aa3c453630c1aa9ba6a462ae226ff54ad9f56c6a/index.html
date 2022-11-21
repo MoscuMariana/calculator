@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- Start My social -->
+<div class="socialWrapper">
+  <h1>
+    <span class="hide default">My social</span>
+    <span class="hide head1">facebook</span>
+    <span class="hide head2">twitter</span>
+    <span class="hide head3">google+</span>
+    <span class="hide head4">github</span>
+    <span class="hide head5">linkedin</span>
+  </h1>
+  <ul class="social">
+    <li><a href="https://www.facebook.com/maryllin.marina"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+    <li><a href="https://github.com/MoscuMariana"><i class="fa fa-github-square fa-3x"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/moscu-mariana-593a3993/"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+  </ul>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://use.fontawesome.com/cece742d74.js'></script><script  src="./script.js"></script>
+
+<!-- End My social -->
+
+<!-- Start Calculator-->
+<h1 style="text-align:center">Calculator App</h1>
+<div class="container">
+<br>
+<table>
+    <tr>
+        <td colspan="3"><input type='text' id='result' class ='screen' style="text-align: right;"></td>
+        <td>
+            <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
+        </td>
+    </tr>
+</table>
+<div class="keys">
+<input type="button" value="7" class="button" onClick="display('7')"></input>
+<input type="button" value="8" class="button " onClick="display('8')"></input>
+<input type="button" value="9" class="button" onClick="display('9')"></input>
+<input type="button" value="/" class="operator" onClick="display('/')"></input>
+<input type="button" value="4" class="button" onClick="display('4')"></input>
+<input type="button" value="5" class="button" onClick="display('5')"></input>
+<input type="button" value="6" class="button" onClick="display('6')"></input>
+<input type="button" value="*" class="operator" onClick="display('*')"></input>
+<input type="button" value="1" class="button" onClick="display('1')"></input>
+<input type="button" value="2" class="button" onClick="display('2')"></input>
+<input type="button" value="3" class="button" onClick="display('3')"></input>
+<input type="button" value="-" class="operator" onClick="display('-')"></input>
+<input type="button" value="0" class="button" onClick="display('0')"></input>
+<input type="button" value="." class="button" onClick="display('.')"></input>
+<input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+<input type="button" value="+" class="operator" onClick="display('+')"></input>
+</div> 
+</div>
+<!-- End Calculator-->
+</body>
+</html>
